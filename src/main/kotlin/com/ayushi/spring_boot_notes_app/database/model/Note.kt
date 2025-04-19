@@ -9,7 +9,7 @@ import java.time.Instant
 data class Note(
     val title: String,
     val content: String,
-    val body: Long,
+    val color: Long,
     val createdAt: Instant,
     val ownerId : ObjectId, // id of the owner who owns this notes
     @Id val id: ObjectId? = ObjectId.get() // mongodb object id
